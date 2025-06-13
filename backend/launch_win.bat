@@ -1,0 +1,1 @@
+set GOOGLE_APPLICATION_CREDENTIALS=<path_to_service_account_key>.json && java -jar target/backend-0.0.1-SNAPSHOT.jar

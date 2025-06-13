@@ -1,0 +1,8 @@
+/frontend/.angular/
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/package-lock.json
+/frontend/src/environments/
+/backend/target/
+/**/.idea/

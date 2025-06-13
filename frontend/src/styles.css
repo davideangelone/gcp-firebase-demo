@@ -1,0 +1,29 @@
+/* Stili globali applicazione */
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center; /* centra orizzontalmente */
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+
+.table-container table {
+  width: 90%;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid black;   /* bordo nero sottile */
+  padding: 6px 12px;
+}
+
+.message-container input {
+  width: 85%;
+}
+.message-container button {
+  width: 5%;
+}

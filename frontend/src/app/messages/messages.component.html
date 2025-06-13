@@ -1,0 +1,46 @@
+<div style="text-align:center">
+  <h2>Messaggi</h2>
+  <div class="message-container">
+    <input [(ngModel)]="message" placeholder="Scrivi un messaggio">
+    <button (click)="message = ''" [disabled]="!message || message.trim() === ''">
+      Cancella
+    </button>
+    <button (click)="sendMessage()" [disabled]="!message || message.trim() === '' || isSending">
+      Invia
+    </button>
+  </div>
+  <br>
+  <br>
+  <p *ngIf="messages.length === 0">Nessun messaggio trovato.</p>
+  <p *ngIf="messages.length > 0">Messaggi trovati: {{ messages.length }}</p>
+  <br>
+  <div class="table-container" *ngIf="messages.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>Numero</th>
+          <th>Timestamp</th>
+          <th>User</th>
+          <th>Id</th>
+          <th>Testo</th>
+          <th>Cancella</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let msg of messages; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td *ngIf="msg.timestamp">{{ msg.timestamp | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+          <td *ngIf="!msg.timestamp"></td>
+          <td [attr.title]="msg.user.length > 10 ? msg.user : null">
+            {{ msg.user.length > 10 ? (msg.user | slice:0:10) + '...' : msg.user }}
+          </td>
+          <td>{{ msg.id }}</td>
+          <td>{{ msg.text }}</td>
+          <td>
+            <button (click)="deleteMessage(msg.id)" [disabled]="!msg.id || msg.id.trim() === '' || isDeleting">Cancella</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

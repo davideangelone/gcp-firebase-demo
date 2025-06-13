@@ -1,0 +1,9 @@
+  <header *ngIf="isLoggedIn" class="header-container">
+    <nav>
+        <button class="left" routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
+        <div class="right">
+          <span>User <strong>{{ getUser() }}</strong></span>
+          <button (click)="logout()">Logout</button>
+        </div>
+      </nav>
+  </header>

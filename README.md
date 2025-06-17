@@ -23,3 +23,11 @@ Per il **backend**, soltanto per deploy in ambienti esterni a GCP (ad esempio in
 
 Per il **frontend** bisogna configurare il file .env con le proprietà ritornate in fase di creazione dell'applicazione su Firebase
 
+---
+
+## 🧪 Test
+
+Nel **backend**, per eseguire l'integration test (basato su *TestContainers*):
+- È necessario impostare la variabile di ambiente `TESTCONTAINERS_RYUK_DISABLED` a `true` per disabilitare Ryuk.
+- Se il docker engine è in ascolto sul protocollo IPv6 (ad esempio quando installato su WSL2 di Windows) è necessario utilizzare la JVM option `-Djava.net.preferIPv6Addresses=true`.
+

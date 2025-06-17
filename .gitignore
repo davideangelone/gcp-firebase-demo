@@ -2,7 +2,6 @@
 /frontend/node_modules/
 /frontend/dist/
 /frontend/.env
-/frontend/package-lock.json
-/frontend/src/environments/
+/frontend/src/environments/*.ts
 /backend/target/
 /**/.idea/

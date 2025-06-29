@@ -1,0 +1,30 @@
+.header-container {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f7f7f7;
+  display: grid;
+}
+
+.header-container span {
+  padding-right: 20px;
+  font-size: 0.9rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+button {
+  cursor: pointer;
+}
+
+span {
+  cursor: default;
+  user-select: none;
+}

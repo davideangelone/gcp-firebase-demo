@@ -1,0 +1,7 @@
+/frontend/.angular/
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/src/environments/*.ts
+/backend/target/
+/**/.idea/

@@ -23,7 +23,7 @@
         <firebase-admin.version>9.5.0</firebase-admin.version>
         <google-jib.version>3.4.6</google-jib.version>
         <servlet-api.version>6.1.0</servlet-api.version>
-        <lombok.version>1.18.36</lombok.version>
+        <lombok.version>1.18.38</lombok.version>
 
         <testcontainers.version>1.21.1</testcontainers.version>
         <reactor-test.version>3.7.7</reactor-test.version>

@@ -18,7 +18,7 @@
     <properties>
         <spring.boot.starter.version>3.5.1</spring.boot.starter.version>
         <spring.cloud.version>6.2.1</spring.cloud.version>
-        <spring.security.version>6.5.0</spring.security.version>
+        <spring.security.version>6.5.1</spring.security.version>
         <google-cloud-firestore.version>3.31.5</google-cloud-firestore.version>
         <firebase-admin.version>9.5.0</firebase-admin.version>
         <google-jib.version>3.4.6</google-jib.version>

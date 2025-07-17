@@ -16,7 +16,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <spring.boot.starter.version>3.5.1</spring.boot.starter.version>
+        <spring.boot.starter.version>3.5.3</spring.boot.starter.version>
         <spring.cloud.version>6.2.1</spring.cloud.version>
         <spring.security.version>6.5.1</spring.security.version>
         <google-cloud-firestore.version>3.31.5</google-cloud-firestore.version>
